@@ -1,35 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Footer</title>
 
-  <body>
-    <footer>
-      <div class="content">
-        <div class="top">
-          <div class="logo-details">
-            <span class="logo_name">company</span>
-          </div>
-          <div class="media-icons">
-            <!-- your code here -->
-          </div>
-        </div>
-        <div class="link-boxes">
-          <!-- your code here -->
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+    }
+
+    footer{
+      background:#222;
+      color:white;
+      padding:40px 20px;
+    }
+
+    .footer-container{
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      gap:30px;
+    }
+
+    .footer-section{
+      flex:1 1 180px;
+    }
+
+    .footer-section h2{
+      margin-bottom:15px;
+      font-size:20px;
+      color:#f4b400;
+    }
+
+    .footer-section ul{
+      list-style:none;
+    }
+
+    .footer-section ul li{
+      margin-bottom:10px;
+    }
+
+    .footer-section ul li a{
+      text-decoration:none;
+      color:#ddd;
+      transition:0.3s;
+    }
+
+    .footer-section ul li a:hover{
+      color:#fff;
+    }
+
+    .contact-number{
+      margin-top:10px;
+      color:#ddd;
+    }
+
+    .social-links{
+      margin-top:15px;
+      display:flex;
+      gap:15px;
+    }
+
+    .media-icons{
+      width:40px;
+      height:40px;
+      background:#444;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      text-decoration:none;
+      transition:0.3s;
+    }
+
+    .media-icons:hover{
+      background:#f4b400;
+      color:#222;
+    }
+
+    .bottom-text{
+      text-align:center;
+      margin-top:30px;
+      border-top:1px solid #444;
+      padding-top:15px;
+      color:#bbb;
+      font-size:14px;
+    }
+
+   
+
+    }
+  </style>
+</head>
+<body>
+
+  <footer>
+    <div class="footer-container">
+
+      <div class="footer-section">
+        <h2>Home</h2>
+        <ul>
+          <li><a href="#">Homepage</a></li>
+          <li><a href="#">Latest Updates</a></li>
+          <li><a href="#">News</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h2>About</h2>
+        <ul>
+          <li><a href="#">Our Company</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h2>Links</h2>
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      
+      <div class="footer-section">
+        <h2>Services</h2>
+        <ul>
+          <li><a href="#">Web Development</a></li>
+          <li><a href="#">App Development</a></li>
+          <li><a href="#">UI/UX Design</a></li>
+        </ul>
+      </div>
+
+      
+      <div class="footer-section">
+        <h2>Contact</h2>
+        <p>Email: company@email.com</p>
+        <p class="contact-number">8879887262</p>
+
+    
+        <div class="social-links">
+          <a href="#" class="media-icons"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="media-icons"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="media-icons"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="media-icons"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="media-icons"><i class="fab fa-youtube"></i></a>
         </div>
       </div>
-      <div class="bottom-details">
-        <!-- your code here -->
-      </div>
-    </footer>
-  </body>
+
+    </div>
+
+    <div class="bottom-text">
+      © 2026 Company Name. All Rights Reserved.
+    </div>
+  </footer>
+
+</body>
 </html>
